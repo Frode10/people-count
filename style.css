@@ -57,8 +57,8 @@ p {
 
 /* Knappestil */
 button {
-    width: 270px; /* Fast bredde */
-    height: 50px; /* Fast høyde */
+    width: 90%; /* Fast bredde */
+    height: 200px; /* Fast høyde */
     background-color: rgb(18, 96, 192);
     border: none;
     border-radius: 8px;
