@@ -1,3 +1,18 @@
+/** Slår av dobbelt touch zoom funksjon på iphone.  */
+let lastTouchTime = 0;
+
+document.addEventListener('touchstart', function (event) {
+    const currentTime = new Date().getTime();
+    const timeDifference = currentTime - lastTouchTime;
+
+    if (timeDifference < 300) { // Hvis det er mindre enn 300ms mellom to touch, forhindrer zoom
+        event.preventDefault();
+    }
+
+    lastTouchTime = currentTime;
+}, { passive: false }); // Passiv må være false for å kunne kalle preventDefault
+/**- ---------------------- end dobbeltouch off ----- */
+
 // Hent HTML-elementer
 let countEL = document.getElementById("count-el");
 let count = 0;
