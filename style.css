@@ -4,21 +4,39 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    background-color: lightcoral;
 }
 
 .wrapper {
-    background-color: rgb(196, 200, 254);
+    
+   display: flex;
+   flex-direction: column;
+    align-items: center;
+    background-color: white;
     max-width: 400px;
     padding:2rem;
     border-radius: 8px;
 }
 
+#count-el {
+    display:inline-block;
+    width:30px;
+    padding:1rem;
+    background-color: chocolate;
+    border-radius: 4px;
+    color:white;
+    font-size: 2rem;
+    text-align: center;
+}
 button {
     padding:1rem 2rem;
     background-color: lightblue;
     border:1px solid lightcoral;
     border-radius: 4px;
     font-size: 1.5rem;
+    width:100%;
+    letter-spacing: 1px;
+    font-weight: 500;
 }
 
 button:hover {
