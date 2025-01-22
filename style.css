@@ -76,8 +76,8 @@ button {
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.2s ease; /* Overgangseffekt */
-}
+    /* transition: background-color 0.2s ease; /* Overgangseffekt */
+} */
 
 button:active {
     background-color: lightgreen; /* Endres til lysgrønn ved klikk */
