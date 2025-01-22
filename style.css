@@ -1,11 +1,7 @@
-* {
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-}
-
-html, body {margin: 0;
+html, body {
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
     height: 100%; /* Sørg for at både html og body fyller hele høyden */
     overflow: hidden; /* Hindre scrolling */
 }
