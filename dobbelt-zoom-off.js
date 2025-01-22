@@ -23,21 +23,6 @@ button.addEventListener('touchstart', function (event) {
 
 
 // Hindre pinch-to-zoom
-document.addEventListener('touchmove', function (event) {
-    if (event.touches.length > 1) { // Hvis mer enn én finger brukes
-        event.preventDefault(); // Hindre zoom
-    }
-}, { passive: false }); // Passiv må være false for å kunne bruke preventDefault
 
-// Hindre gesture-zoom i nettlesere som støtter gesture-events (f.eks. Safari)
-document.addEventListener('gesturestart', function (event) {
-    event.preventDefault();
-});
-document.addEventListener('gesturechange', function (event) {
-    event.preventDefault();
-});
-document.addEventListener('gestureend', function (event) {
-    event.preventDefault();
-});
 
 /**- ---------------------- end dobbeltouch off ----- */
