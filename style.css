@@ -22,7 +22,7 @@ h1 {
     display: flex;
    flex-direction: column;
     align-items: center;
-    justify-content:center;
+    justify-content:flex-start;
     background-color: whitesmoke;
     max-width: 350px;
     padding: 2rem 4rem 5px 4rem;
@@ -58,8 +58,8 @@ p {
     margin-bottom:1rem;
 }
 button {
-    width:260px; /* Sett fast bredde */
-    height: 100px; /* Angi høyden eksplisitt, eller bruk auto */
+    width:270px; /* Sett fast bredde */
+    height: 50px; /* Angi høyden eksplisitt, eller bruk auto */
     background-color: rgb(18, 96, 192);
     border: none;
     border-radius: 8px;
