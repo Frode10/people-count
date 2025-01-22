@@ -14,7 +14,7 @@ button.addEventListener('touchstart', function (event) {
     const currentTime = new Date().getTime();
     const timeDifference = currentTime - lastTouchTime;
 
-    if (timeDifference < 1000) { // Hvis to klikk skjer innen 300ms
+    if (timeDifference < 60) { // Hvis to klikk skjer innen 300ms
         event.preventDefault(); // Hindre zoom
     }
 
