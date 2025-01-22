@@ -76,7 +76,7 @@ button {
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Overgangseffekt */
+    transition: background-color 0.2s ease; /* Overgangseffekt */
 }
 
 button:active {
