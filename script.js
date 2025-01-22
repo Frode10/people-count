@@ -44,27 +44,25 @@ function fadeEffect() {
 let colorMode = 0; // Rotasjonsvariabel: 0 = rød, 1 = grønn, 2 = blå
 
 function generateRandomColor() {
-    const min = 250; // Lys minimumsverdi
+    const min = 200; // Lys minimumsverdi
     const randomValue = Math.floor(Math.random() * (256 - min) + min); // Generer lys intensitet
 
-    // Rotasjon mellom røde, grønne og blå nyanser
     let randomR = 0, randomG = 0, randomB = 0;
+
     if (colorMode === 0) { // Rød dominerer
         randomR = randomValue;
-        randomG = Math.floor(Math.random() * 245); // Lav grønn
-        randomB = Math.floor(Math.random() * 245); // Lav blå
+        randomG = Math.floor(Math.random() * 100);
+        randomB = Math.floor(Math.random() * 100);
     } else if (colorMode === 1) { // Grønn dominerer
         randomG = randomValue;
-        randomR = Math.floor(Math.random() * 245); // Lav rød
-        randomB = Math.floor(Math.random() * 245); // Lav blå
+        randomR = Math.floor(Math.random() * 100);
+        randomB = Math.floor(Math.random() * 100);
     } else if (colorMode === 2) { // Blå dominerer
         randomB = randomValue;
-        randomR = Math.floor(Math.random() * 245); // Lav rød
-        randomG = Math.floor(Math.random() * 245); // Lav grønn
+        randomR = Math.floor(Math.random() * 100);
+        randomG = Math.floor(Math.random() * 100);
     }
 
-    // Oppdater for neste farge
     colorMode = (colorMode + 1) % 3; // Roter mellom 0, 1, 2
-
     return `rgb(${randomR}, ${randomG}, ${randomB})`;
 }
