@@ -13,7 +13,7 @@ body {
    flex-direction: column;
     align-items: center;
     background-color: white;
-    max-width: 400px;
+    max-width: 1000px;
     padding:2rem;
     border-radius: 8px;
 }
