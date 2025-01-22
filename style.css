@@ -4,41 +4,58 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: lightcoral;
+    background-color: rgb(121, 34, 34);
 }
-
+p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    text-align: center;
+    width: 100%;
+}
 .wrapper {
     
    display: flex;
    flex-direction: column;
     align-items: center;
     background-color: white;
-    max-width: 1000px;
-    padding:2rem;
+    width: 100%;
+    max-width: 450px;
+    padding: 0rem 2rem 4rem 2rem;
     border-radius: 8px;
+    color:rgb(121, 34, 34)
+   
 }
+.wrapper:hover, h1:hover {
+    /* box-shadow: 0px 0px 3px 5px rgb(254, 71, 71); */
+    background-color: rgb(60, 60, 60);
+    color:lightgreen;
+    
+}
+
 
 #count-el {
     display:inline-block;
-    width:30px;
-    padding:1rem;
-    background-color: chocolate;
-    border-radius: 4px;
-    color:white;
-    font-size: 2rem;
+    width:60px;
+    padding:1rem 2rem;
+    background-color: rgb(4, 255, 84);
+    border-radius: 8px;
+    color:black;
+    font-size: 3rem;
     text-align: center;
 }
 button {
-    padding:1rem 2rem;
-    background-color: lightblue;
-    border:1px solid lightcoral;
-    border-radius: 4px;
-    font-size: 1.5rem;
-    width:100%;
+    background-color: rgb(18, 96, 192);
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
     letter-spacing: 1px;
-    font-weight: 500;
+    padding: 3rem 4rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Overgangseffekt */
 }
 
-button:hover {
-    background-color: bisque;
+button:active {
+    background-color: lightgreen; /* Endres til lysgrønn ved klikk */
 }
