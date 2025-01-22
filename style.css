@@ -24,7 +24,7 @@ h1 {
     align-items: center;
     justify-content:center;
     background-color: whitesmoke;
-    max-width: 450px;
+    max-width: 350px;
     padding: 2rem 4rem 5px 4rem;
     color:rgb(121, 34, 34);
     width: 100%;
@@ -58,8 +58,8 @@ p {
     margin-bottom:1rem;
 }
 button {
-    width:250px; /* Sett fast bredde */
-    height: 250px; /* Angi høyden eksplisitt, eller bruk auto */
+    width:260px; /* Sett fast bredde */
+    height: 100px; /* Angi høyden eksplisitt, eller bruk auto */
     background-color: rgb(18, 96, 192);
     border: none;
     border-radius: 8px;
