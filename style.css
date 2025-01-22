@@ -1,72 +1,71 @@
+/* Globale stiler */
 html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    height: 100%; /* Sørg for at både html og body fyller hele høyden */
+    height: 100%;
     overflow: hidden; /* Hindre scrolling */
-}
-body {
     display: flex;
-    flex-direction: column;
+    justify-content: center; /* Sentrum for små skjermer */
     align-items: center;
-    background-color: rgb(121, 34, 34);
+    background-color: rgb(121, 34, 34); /* Bakgrunnsfarge for hele skjermen */
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
-h1 {
-    font-size: clamp(1rem, 5vw, 2rem);
-    letter-spacing: 1px;
-    margin-top: 1rem;
-    margin-bottom: 1rem; 
-}
+
+/* Wrapper */
 .wrapper {
     display: flex;
-   flex-direction: column;
-    align-items: center;
-    justify-content:flex-start;
+    flex-direction: column; /* Vertikal retning for barna */
+    align-items: flex-start; /* Start innholdet til venstre */
+    justify-content: flex-start; /* Start innholdet fra toppen */
     background-color: whitesmoke;
-    max-width: 350px;
-    padding: 2rem 4rem 5px 4rem;
-    color:rgb(121, 34, 34);
+    max-width: 375px; /* Begrensning for desktop */
     width: 100%;
-    min-height: 100vh; /* Moderne løsning for å håndtere viewporthøyde */
-    height: 100%; /* Fall-back for eldre nettlesere */
+    padding: 2rem; /* Jevn padding */
+    color: rgb(121, 34, 34);
+    min-height: 100vh; /* Fyll hele skjermen */
 }
-.wrapper:hover {
-    /* box-shadow: 0px 0px 3px 5px rgb(254, 71, 71); */
-    background-color: rgb(60, 60, 60);
-    color:lightgreen;
-    
-    
+
+/* H1-styling */
+h1 {
+    font-size: clamp(1rem, 5vw, 2rem); /* Tilpasser seg skjermstørrelsen */
+    letter-spacing: 1px;
+    margin: 0 0 1rem; /* Margin bare under */
 }
+
+/* P-element */
 p {
     font-size: 1rem;
     line-height: 1.6;
-    text-align: center;
-    width: 100%;
-    margin-bottom: 1rem;
+    margin: 0 0 1rem; /* Margin bare under */
+    width: 100%; /* Full bredde */
+    text-align: left; /* Venstrejustert for konsistens */
 }
+
+/* Counter styling */
 #count-el {
-    display:inline-block;
-    width:fit-content;
-    padding:1rem 3rem;
+    width: fit-content;
+    padding: 1rem 3rem;
     background-color: rgb(4, 255, 84);
     border-radius: 8px;
-    color:black;
+    color: black;
     font-size: 5rem;
     font-weight: 400;
+    margin-bottom: 1rem; /* Avstand til knappen */
     text-align: center;
-    margin-bottom:1rem;
 }
+
+/* Knappestil */
 button {
-    width:270px; /* Sett fast bredde */
-    height: 50px; /* Angi høyden eksplisitt, eller bruk auto */
+    width: 270px; /* Fast bredde */
+    height: 50px; /* Fast høyde */
     background-color: rgb(18, 96, 192);
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    align-self: center; /* Sørger for at knappen ikke strekker seg hvis forelderen er flex */
+    text-align: center;
 }
 
 button:active {
-    background-color: lightgreen; /* Endres til lysgrønn ved klikk */
+    background-color: lightgreen; /* Fargeendring ved klikk */
 }
