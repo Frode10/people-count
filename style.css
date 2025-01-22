@@ -30,7 +30,7 @@ p {
     color:rgb(121, 34, 34)
    
 }
-.wrapper:hover, h1:hover {
+.wrapper:hover {
     /* box-shadow: 0px 0px 3px 5px rgb(254, 71, 71); */
     background-color: rgb(60, 60, 60);
     color:lightgreen;
