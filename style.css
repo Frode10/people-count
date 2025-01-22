@@ -58,15 +58,14 @@ p {
     margin-bottom:1rem;
 }
 button {
-  
-    width:300px;
-    height: 100%;
+    width:250px; /* Sett fast bredde */
+    height: 250px; /* Angi høyden eksplisitt, eller bruk auto */
     background-color: rgb(18, 96, 192);
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    /* transition: background-color 0.2s ease; /* Overgangseffekt */
-} */
+    align-self: center; /* Sørger for at knappen ikke strekker seg hvis forelderen er flex */
+}
 
 button:active {
     background-color: lightgreen; /* Endres til lysgrønn ved klikk */
