@@ -1,0 +1,71 @@
+/* Globale stiler */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden; /* Hindre scrolling */
+    display: flex;
+    justify-content: center; /* Sentrum for små skjermer */
+    width:100%;
+    background-color: rgb(121, 34, 34); /* Bakgrunnsfarge for hele skjermen */
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+/* Wrapper */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+    background-color: whitesmoke;
+    max-width: 450px; /* Begrensning for desktop */
+    width: 100%;
+    padding: 1rem; /* Jevn padding */
+    color: rgb(121, 34, 34);
+    min-height: 100vh; /* Fyll hele skjermen */
+}
+
+/* H1-styling */
+h1 {
+    font-size: clamp(1rem, 5vw, 2rem); /* Tilpasser seg skjermstørrelsen */
+    letter-spacing: 1px;
+}
+
+/* P-element */
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    
+   
+  
+}
+
+/* Counter styling */
+#count-el {
+    width: fit-content;
+    padding: 1rem 3rem;
+    background-color: rgb(4, 255, 84);
+    border-radius: 8px;
+    color: black;
+    font-size: 5rem;
+    font-weight: 400;
+    margin-bottom: 1rem; /* Avstand til knappen */
+    text-align: center;
+}
+
+/* Knappestil */
+button {
+    width: 100%; /* Fast bredde */
+    height: 20vh; /* Fast høyde */
+    margin:0px 1rem 1rem 1rem;
+    background-color: rgb(18, 96, 192);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+}
+
+button:active {
+    background-color: lightgreen; /* Fargeendring ved klikk */
+}
