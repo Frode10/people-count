@@ -7,7 +7,7 @@ html, body {
     overflow: hidden; /* Hindre scrolling */
     display: flex;
     justify-content: center; /* Sentrum for små skjermer */
-    align-items: center;
+    align-items: flex-start;
     background-color: rgb(121, 34, 34); /* Bakgrunnsfarge for hele skjermen */
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
@@ -16,10 +16,10 @@ html, body {
 .wrapper {
     display: flex;
     flex-direction: column; /* Vertikal retning for barna */
-    align-items: flex-start; /* Start innholdet til venstre */
+    align-items: center; /* Start innholdet til venstre */
     justify-content: flex-start; /* Start innholdet fra toppen */
     background-color: whitesmoke;
-    max-width: 375px; /* Begrensning for desktop */
+    max-width: 450px; /* Begrensning for desktop */
     width: 100%;
     padding: 2rem; /* Jevn padding */
     color: rgb(121, 34, 34);
@@ -57,8 +57,9 @@ p {
 
 /* Knappestil */
 button {
-    width: 90%; /* Fast bredde */
-    height: 200px; /* Fast høyde */
+    width: 100%; /* Fast bredde */
+    height: 20vh; /* Fast høyde */
+    margin:0px 1rem 1rem 1rem;
     background-color: rgb(18, 96, 192);
     border: none;
     border-radius: 8px;
