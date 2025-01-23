@@ -1,72 +1,25 @@
-/* Globale stiler */
-html, body {
-    margin: 0;
-    padding: 0;
+*{
+    margin:0;
+    padding:0;
     box-sizing: border-box;
-    height: 100%;
-    overflow: hidden; /* Hindre scrolling */
+}
+body{
     display: flex;
-    justify-content: center; /* Sentrum for små skjermer */
-    align-items: flex-start;
-    background-color: rgb(121, 34, 34); /* Bakgrunnsfarge for hele skjermen */
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
 }
 
-/* Wrapper */
 .wrapper {
-    display: flex;
-    flex-direction: column; /* Vertikal retning for barna */
-    align-items: center; /* Start innholdet til venstre */
-    justify-content: flex-start; /* Start innholdet fra toppen */
     background-color: whitesmoke;
-    max-width: 450px; /* Begrensning for desktop */
     width: 100%;
-    padding: 2rem; /* Jevn padding */
-    color: rgb(121, 34, 34);
-    min-height: 100vh; /* Fyll hele skjermen */
+    max-width: 450px;
+    height:100%;
 }
-
-/* H1-styling */
-h1 {
-    font-size: clamp(1rem, 5vw, 2rem); /* Tilpasser seg skjermstørrelsen */
-    letter-spacing: 1px;
-    margin: 0 0 1rem; /* Margin bare under */
-}
-
-/* P-element */
-p {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin: 0 0 1rem; /* Margin bare under */
-    width: 100%; /* Full bredde */
-    text-align: left; /* Venstrejustert for konsistens */
-}
-
-/* Counter styling */
-#count-el {
-    width: fit-content;
-    padding: 1rem 3rem;
-    background-color: rgb(4, 255, 84);
-    border-radius: 8px;
-    color: black;
-    font-size: 5rem;
-    font-weight: 400;
-    margin-bottom: 1rem; /* Avstand til knappen */
-    text-align: center;
-}
-
-/* Knappestil */
 button {
-    width: 100%; /* Fast bredde */
-    height: 20vh; /* Fast høyde */
-    margin:0px 1rem 1rem 1rem;
-    background-color: rgb(18, 96, 192);
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    text-align: center;
-}
+    background-color: aliceblue;
+    width: 100%;
+    height:100%;
+    border:0;
 
-button:active {
-    background-color: lightgreen; /* Fargeendring ved klikk */
 }
